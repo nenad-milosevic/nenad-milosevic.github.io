@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --standard-padding: 2rem;
+}
+
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    padding: calc(var(--standard-padding) * 2);
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: var(--standard-padding);
+}
+
+.section-container {
+    text-align: center;
+}
+
+.about-me {
+    width: 60vw;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(var(--standard-padding) / 2);;
+    margin: auto;
+}
+
+.artwork {
+    display: flex;
+    flex-flow: column;
+}
+
+.artwork img {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.artwork figcaption {
+    text-align: center;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .artwork-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .artwork img {
+        width: 80vw;
+        max-width: none;
+    }
+}
