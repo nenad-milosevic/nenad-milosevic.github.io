@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
     padding: calc(var(--standard-padding) * 2);
     background-color: var(--pico-background-color);
     color: var(--pico-color);
@@ -21,6 +21,7 @@ body {
 .navigation-buttons {
     display: flex;
     gap: var(--standard-padding);
+    justify-content: center;
 }
 
 .section-container {
@@ -53,6 +54,23 @@ body {
     text-align: center;
 }
 
+.florence {
+    margin: 2rem 0 0 0;
+    max-width: 80%;
+}
+
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}
+
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
     .artwork-grid {
@@ -63,4 +81,9 @@ body {
         width: 80vw;
         max-width: none;
     }
+
+    .florence {
+        max-width: 85vw;
+    }
 }
+
