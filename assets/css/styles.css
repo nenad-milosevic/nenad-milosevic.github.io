@@ -22,6 +22,7 @@ body {
     display: flex;
     gap: var(--standard-padding);
     justify-content: center;
+    margin: 0 0 1rem 0;
 }
 
 .section-container {
@@ -56,6 +57,10 @@ body {
 
 .florence {
     margin: 2rem 0 0 0;
+}
+
+.logo {
+    max-width: 80%;
 }
 
 .contact-container {
